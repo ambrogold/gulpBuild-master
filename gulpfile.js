@@ -15,7 +15,7 @@ gulp.task('pug', function (callback) {
     return gulp.src('./app/pug/pages/**/*.pug')
 
         .pipe(plumber({
-            errorHandler: notify.onError(function (err) {
+            errorHandler: notify.onError(function (err) { //f
                 return {
                     title: 'Pug',
                     sound: false,
